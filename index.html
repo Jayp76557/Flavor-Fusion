@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Flavour Fusion</title>
+  <meta name="title" content="Flavour Fusion">
+  <meta name="description" content="Flavour Fusion - Amazing & Delicious Food">
+
+  <!-- Icon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+<!-- css -->
+<link rel="stylesheet" href="./assets/css/style.css">
+
+
+</head>
+<body>
+  
+  <!-- Preloader -->
+  <!-- <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Flavour Fusion</p>
+  </div> -->
+  
+  <!-- screens -->
+    <div id="header"></div>
+    <main>
+      <article>
+        <div id="hero"></div>
+        <div id="service"></div>
+        <div id="about"></div>
+        <div id="special-dish"></div>
+        <div id="menu"></div>
+        <div id="testimonials"></div>
+        <div id="reservation"></div>
+        <div id="features"></div>
+        <div id="event"></div>
+      </article>
+    </main>
+    <div id="footer"></div>
+
+    <script>
+      
+        fetch('./controller/header.html').then(response => response.text()).then(data => document.getElementById('header').innerHTML = data);
+        fetch('./controller/hero.html').then(response => response.text()).then(data => document.getElementById('hero').innerHTML = data);
+        fetch('./controller/service.html').then(response => response.text()).then(data => document.getElementById('service').innerHTML = data);
+        fetch('./controller/about.html').then(response => response.text()).then(data => document.getElementById('about').innerHTML = data);
+        fetch('./controller/special-dish.html').then(response => response.text()).then(data => document.getElementById('special-dish').innerHTML = data);
+        fetch('./controller/menu.html').then(response => response.text()).then(data => document.getElementById('menu').innerHTML = data);
+        fetch('./controller/testimonials.html').then(response => response.text()).then(data => document.getElementById('testimonials').innerHTML = data);
+        fetch('./controller/reservation.html').then(response => response.text()).then(data => document.getElementById('reservation').innerHTML = data);
+        fetch('./controller/features.html').then(response => response.text()).then(data => document.getElementById('features').innerHTML = data);
+        fetch('./controller/event.html').then(response => response.text()).then(data => document.getElementById('event').innerHTML = data);
+        fetch('./controller/footer.html').then(response => response.text()).then(data => document.getElementById('footer').innerHTML = data);
+    
+    </script>
+
+    <!-- js link -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- Ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
