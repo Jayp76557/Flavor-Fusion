@@ -18,52 +18,169 @@
 
 <!-- css -->
 <link rel="stylesheet" href="./assets/css/style.css">
+<link rel="stylesheet" href="./assets/css/header.css">
 
 
 </head>
-<body>
+<body id="top">
   
   <!-- Preloader -->
-  <!-- <div class="preload" data-preaload>
+  <div class="preload" data-preaload>
     <div class="circle"></div>
     <p class="text">Flavour Fusion</p>
-  </div> -->
+  </div> 
   
-  <!-- screens -->
-    <div id="header"></div>
-    <main>
-      <article>
-        <div id="hero"></div>
-        <div id="service"></div>
-        <div id="about"></div>
-        <div id="special-dish"></div>
-        <div id="menu"></div>
-        <div id="testimonials"></div>
-        <div id="reservation"></div>
-        <div id="features"></div>
-        <div id="event"></div>
-      </article>
-    </main>
-    <div id="footer"></div>
+  <!-- Topbar.html -->
+   <div class="topbar">
+    <div class="container">
 
-    <script>
-      
-        fetch('./controller/header.html').then(response => response.text()).then(data => document.getElementById('header').innerHTML = data);
-        fetch('./controller/hero.html').then(response => response.text()).then(data => document.getElementById('hero').innerHTML = data);
-        fetch('./controller/service.html').then(response => response.text()).then(data => document.getElementById('service').innerHTML = data);
-        fetch('./controller/about.html').then(response => response.text()).then(data => document.getElementById('about').innerHTML = data);
-        fetch('./controller/special-dish.html').then(response => response.text()).then(data => document.getElementById('special-dish').innerHTML = data);
-        fetch('./controller/menu.html').then(response => response.text()).then(data => document.getElementById('menu').innerHTML = data);
-        fetch('./controller/testimonials.html').then(response => response.text()).then(data => document.getElementById('testimonials').innerHTML = data);
-        fetch('./controller/reservation.html').then(response => response.text()).then(data => document.getElementById('reservation').innerHTML = data);
-        fetch('./controller/features.html').then(response => response.text()).then(data => document.getElementById('features').innerHTML = data);
-        fetch('./controller/event.html').then(response => response.text()).then(data => document.getElementById('event').innerHTML = data);
-        fetch('./controller/footer.html').then(response => response.text()).then(data => document.getElementById('footer').innerHTML = data);
+        <div class="topbar-item">
+            <div class="icon">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+            </div>
     
-    </script>
+            <span class="span">
+            Clonsilla Avenue, Peterborough, Ontario, K9J 8B2.                                
+            </span>
+        </div>
+        
+        <div class="topbar-item item-2">
+            <div class="icon">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+            </div>
+    
+            <span class="span">Daily : 8.00 am to 10.00 pm</span>
+          </div>
+          
+        <a href="tel:+11234567890" class="topbar-item link">
+            <div class="icon">
+                <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+            </div>
+            <span class="span">+1 123 456 7890</span>
+        </a>
+        <a href="mailto:flavourfusion@gmail.com" class="topbar-item link">
+            <div class="icon">
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+            </div>
+            <span class="span">flavourfusion@gmail.com</span>
+        </a>
+    </div>    
+  </div>
+ 
+  <!-- Header.html -->
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo1.svg" width="160" height="50" alt="Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo2.svg" width="200" height="70" alt="Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Menus</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Our Chefs</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+
+          <address class="body-4">
+            Clonsilla Avenue, Peterborough, Ontario, K9J 8B2.
+          </address>
+
+          <p class="body-4 navbar-text">Daily : 8.00 am to 10.00 pm</p>
+
+          <a href="mailto:flavourfusion@gmail.com" class="body-4 sidebar-link">flavourfusion@gmail.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Booking Request</p>
+
+          <a href="tel:+12496880823" class="body-1 contact-number hover-underline">
+            +1-249-688-0823
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="#" class="btn btn-secondary">
+        <span class="text text-1">Find A Table</span>
+
+        <span class="text text-2" aria-hidden="true">Find A Table</span>
+      </a>
+
+      <button class="nav-open-btn" id="hi" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+      
+      <!-- Hero.html -->
+      
+      
+    </article> 
+  </main>
+  
+  
 
     <!-- js link -->
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js" defer></script>
 
     <!-- Ionicon -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
