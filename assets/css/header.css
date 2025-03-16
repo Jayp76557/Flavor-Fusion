@@ -27,7 +27,7 @@
 }
 
 .header.active {
-  padding-block: 20px;
+  padding-block: 15px;
   background-color: var(--eerie-black-4);
   border-color: var(--black-alpha-15);
 }
@@ -56,7 +56,7 @@
   background-color: var(--white);
   margin-block: 4px;
   transform-origin: left;
-  /* animation: menuBtn 400ms ease-in-out alternate infinite; */
+  animation: menuBtn 400ms ease-in-out alternate infinite;
 }
 
 @keyframes menuBtn {

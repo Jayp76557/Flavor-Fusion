@@ -2,6 +2,11 @@
 document.addEventListener("DOMContentLoaded", function () {
   console.log("Script loaded");
 
+
+  /**
+   * PRELOAD
+   */
+
   const preloader = document.querySelector("[data-preaload]");
 
   window.addEventListener("load", function () {
@@ -10,6 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.add("loaded");
   }, 1000);
   });
+
+
+  /**
+   * NAVBAR
+   */
 
   const navbar = document.querySelector("[data-navbar]");
   const navTogglers = document.querySelectorAll("[data-nav-toggler]");
@@ -22,17 +32,20 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.toggle("nav-active");
   };
 
-  // Event delegation for navbar togglers
   navTogglers.forEach(toggler => {
     toggler.addEventListener("click", toggleNavbar);
   });
 
-  // ✅ Use event delegation for dynamically loaded elements
   document.addEventListener("click", function (event) {
     if (event.target.id === "hi") {
       console.log("Button clicked");
     }
   });
+
+
+  /**
+   * HEADER & BACK TOP BTN
+   */
 
   const header = document.querySelector("[data-header]");
   const backTopBtn = document.querySelector("[data-back-top-btn]");
@@ -58,4 +71,46 @@ document.addEventListener("DOMContentLoaded", function () {
       backTopBtn?.classList.remove("active");
     }
   });
+
+  /**
+   * HERO SLIDER
+   */
+
+  // const heroSlider = document.querySelector("[data-hero-slider]");
+const heroSliderItems = document.querySelectorAll("[data-hero-slider-item]");
+const heroSliderPrevBtn = document.querySelector("[data-prev-btn]");
+const heroSliderNextBtn = document.querySelector("[data-next-btn]");
+
+let currentSlidePos = 0;
+let lastActiveSliderItem = heroSliderItems[0];
+
+const updateSliderPos = function () {
+  lastActiveSliderItem.classList.remove("active");
+  heroSliderItems[currentSlidePos].classList.add("active")
+  lastActiveSliderItem=heroSliderItems[currentSlidePos];
+  console.log(currentSlidePos)
+}
+
+const slideNext = function () {
+  if(currentSlidePos<heroSliderItems.length-1){
+    currentSlidePos++
+  }else{
+    currentSlidePos = 0
+  }
+  updateSliderPos();
+}
+
+heroSliderNextBtn.addEventListener("click", slideNext);
+
+const slidePrev = function () {
+  if(currentSlidePos==0){
+    currentSlidePos = heroSliderItems.length-1
+  }else{
+    currentSlidePos--
+  }
+  updateSliderPos();
+}
+
+heroSliderPrevBtn.addEventListener("click", slidePrev);
+
 });
