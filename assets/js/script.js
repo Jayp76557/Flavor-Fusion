@@ -72,9 +72,11 @@ const addEventOnElements = function (elements, eventType, callback) {
   window.addEventListener("scroll", function () {
     if (window.scrollY >= 50) {
       header?.classList.add("active");
-      backTopBtn?.classList.add("active");
+      if (window.scrollY >= 500){
+        backTopBtn?.classList.add("active");
+      }
       hideHeader();
-    } else {
+    } else{
       header?.classList.remove("active");
       backTopBtn?.classList.remove("active");
     }

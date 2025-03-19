@@ -45,3 +45,22 @@
   margin-inline: auto;
   margin-block-start: 40px;
 }
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for larger than 575px screen
+ */
+@media (min-width: 575px) {
+
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+
+    
+
+  }}

@@ -88,3 +88,22 @@
   color: var(--gold-crayola);
   text-decoration: underline;
 }
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for larger than 575px screen
+ */
+@media (min-width: 575px) {
+
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+
+    
+
+  }}
