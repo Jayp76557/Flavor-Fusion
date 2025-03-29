@@ -1,0 +1,393 @@
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for larger than 575px screen
+ */
+
+ @media (min-width: 575px) {
+    /**
+     * CUSTOM PROPERTY
+     */
+    :root {
+      /**
+       * typography
+       */
+      --fontSize-body-2: 2rem;
+    }
+    .img2{
+      /* opacity: 0.7; */
+      object-position: bottom;
+    }
+
+    /**
+     * REUSED STYLE
+     */
+    .contact-number { --fontSize-body-1: 3rem; }
+  
+    /**
+     * TOPBAR
+     */
+  
+    .topbar {
+      display: block;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding-block: 5px;
+      border-block-start: 1px solid var(--white-alpha-20);
+      z-index: 4;
+      transition: var(--transition-1);
+    }
+  
+    .topbar:has(~ .header.active) { transform: translateY(-100%); }
+  
+    .topbar-item:not(.link),
+    /* .topbar .separator { display: none; } */
+  
+    .topbar .container,
+    .topbar-item {
+      display: flex;
+      align-items: center;
+    }
+  
+    .topbar .container {
+      justify-content: center;
+      gap: 30px;
+    }
+  
+    .topbar-item { gap: 6px; }
+  
+    .topbar-item ion-icon { --ionicon-stroke-width: 60px; }
+  
+    .topbar-item .span { font-size: var(--fontSize-label-1); }
+  
+    .topbar .link { transition: var(--transition-1); }
+  
+    .topbar .link:is(:hover, :focus-visible) { color: var(--gold-crayola); }
+    
+    .footer-info{display: none;}
+
+    /**
+     * HEADER
+     */
+  
+    .header { top: 51px; }
+  
+    .header.active { top: 0; }
+  
+    .header .btn {
+      display: block;
+      margin-inline-start: auto;
+    }
+
+    /**
+     * HERO
+     */
+  
+     .hero-btn {
+      bottom: 10px;
+      right: 50px;
+      position: fixed;
+      /* transform: scale(1); */
+    }
+    .hero-btn:hover {
+        transform: scale(0.7); 
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45); 
+      }
+  
+    /**
+     * MENU
+     */
+  
+    .menu-card .title-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .menu-card .badge { margin-block-start: 0; }
+  
+    .menu-card .span {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 15px;
+      position: relative;
+    }
+  }
+  
+
+  /**
+   * responsive for larger than 768px screen
+   */
+  
+  @media (min-width: 768px) {
+  
+    /**
+     * REUSED STYLE
+     */
+     .img2{
+      /* opacity: 0.7; */
+      object-position: bottom;
+    }
+    .grid-list { grid-template-columns: 1fr 1fr; }
+  
+    /**
+     * HEADER
+     */
+  
+    .navbar-list { margin-inline: 30px; }
+  
+  
+  
+    /**
+     * HERO
+     */
+  
+    .hero .slider-btn {
+      display: grid;
+      position: absolute;
+      z-index: 1;
+      color: var(--gold-crayola);
+      font-size: 2.4rem;
+      border: 1px solid var(--gold-crayola);
+      width: 45px;
+      height: 45px;
+      place-items: center;
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+      transition: var(--transition-1);
+    }
+  
+    .hero .slider-btn ion-icon { transform: rotate(-45deg); }
+  
+    .hero .slider-btn.prev { left: 30px; }
+  
+    .hero .slider-btn.next { right: 30px; }
+  
+    .hero .slider-btn:is(:hover, :focus-visible) {
+      background-color: var(--gold-crayola);
+      color: var(--black);
+    }
+    .footer-info{display:inline-flex}
+  
+  }
+  
+  
+  /**
+   * responsive for larger than 992px screen
+   */
+  
+  @media (min-width: 992px) {
+  
+    .img2{
+      object-position: bottom;
+    }
+  
+    /**
+     * TOPBAR
+     */
+  
+    .topbar-item:not(.link) { display: flex; }
+    
+  
+    /* .topbar .item-2 { margin-inline-end: auto; } */
+
+  
+    /**
+     * MENU
+     */
+  
+    .menu .grid-list {
+      position: relative;
+      column-gap: 90px;
+    }
+  
+    .menu .grid-list::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      height: 100%;
+      border-inline-start: 1px solid var(--white-alpha-20);
+    }
+  }
+
+  
+  /**
+   * responsive for larger than 1200px screen
+   */
+  
+  @media (min-width: 1200px) {
+  
+    /**
+     * CUSTOM PROPERTY
+     */
+  
+    :root {
+  
+      /**
+       * typography
+       */
+  
+      --fontSize-title-2: 2.5rem;
+  
+    }
+  
+    .img2{
+      object-position: bottom;
+    }
+  
+    /**
+     * REUSED STYLE
+     */
+  
+    .container,
+    :is(.service, .event) .container {
+      max-width: 1200px;
+      width: 100%;
+      margin-inline: auto;
+    }
+  
+    .navbar-item[data-bar]{
+      display: none;
+    }
+  
+    /**
+     * TOPBAR
+     */
+  
+    .topbar .container { max-width: unset; }
+  
+    .topbar .separator { display: block; }
+  
+  
+  
+    /**
+     * HEADER
+     */
+  
+    .nav-open-btn,
+    .navbar > *:not(.navbar-list),
+    .header .overlay { display: none; }
+  
+    .header .container { max-width: unset; }
+  
+    .navbar,
+    .navbar.active,
+    .navbar-list { all: unset; }
+  
+    .navbar,
+    .navbar.active { margin-inline: auto 20px; }
+  
+    .navbar-list {
+      display: flex;
+      gap: 20px;
+    }
+  
+    .navbar-item { border-block-start: none; }
+  
+    .navbar .separator { display: none; }
+  
+    .navbar-link:is(:hover, :focus-visible, .active) .span {
+      transform: unset;
+    }
+  
+    .navbar-link {
+      font-weight: var(--weight-bold);
+      letter-spacing: var(--letterSpacing-1);
+    }
+  
+    .navbar-link::after { display: block; }
+  
+    .navbar-link.active::after {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+  
+    .header .btn { margin-inline-start: 0; }
+  
+  
+  
+    /**
+     * HERO
+     */
+  
+    .hero { height: 880px; }
+  
+    .hero-btn {
+      bottom: 10px;
+      right: 50px;
+      position: fixed;
+      /* transform: scale(1); */
+    }
+    .hero-btn:hover {
+        transform: scale(0.7); 
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45); 
+      }
+
+  
+    /**
+     * MENU
+     */
+  
+    .menu .grid-list {
+      gap: 55px 200px;
+      margin-block-end: 55px;
+    }
+  
+  }
+  
+  
+  /**
+   * responsive for larger than 1400px screen
+   */
+  
+  @media (min-width: 1400px) {
+  
+    /**
+     * HEADER
+     */
+  
+    .navbar { margin-inline: auto; }
+  
+    .img2{
+      /* opacity: 0.7; */
+      object-position: bottom;
+    }
+  
+    /**
+     * SPECIAL DISH
+     */
+     .navbar-list {
+      display: flex;
+      gap: 30px;
+    }
+    .menu .container{
+      top: 500px;
+    }
+  
+    .back-img .shape {
+      display: block;
+      width: 60%;
+      position: fixed;
+    }
+    
+    .back-img .shape-2 {
+      top: 0;
+      left: 0;
+      
+    }
+    .back-img .shape-4 {
+        top: 100px;
+        right: 0;
+      }
+      .back-img .shape-5 {
+        display: none;
+      }
+  
+  }

@@ -1,0 +1,2610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavour Fusion - Menu</title>
+    <meta name="title" content="Flavour Fusion">
+    <meta name="description" content="Flavour Fusion - Amazing & Delicious Food">
+
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/food-menu css/style.css">
+    <link rel="stylesheet" href="./assets/food-menu css/header.css">
+    <link rel="stylesheet" href="./assets/food-menu css/hero.css">
+    <link rel="stylesheet" href="./assets/food-menu css/menu.css">
+    <link rel="stylesheet" href="./assets/food-menu css/media-query.css">
+
+    <style>
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body id="top">
+    <!-- Preloader -->
+    <div class="preload" data-preaload>
+        <div class="circle"></div>
+        <p class="text">Fusion's Menu</p>
+    </div>
+    <!-- Header -->
+    <header class="header" data-header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="./assets/images/logo3.svg" onclick="openTab(event, 'home')" width="160" height="50"
+                    alt="Home">
+            </a>
+
+            <nav class="navbar" data-navbar>
+                <button class="close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <a href="index.html" class="logo">
+                    <img src="./assets/images/logo3.svg" onclick="openTab(event, 'home')" width="200" height="70"
+                        alt="Home">
+                </a>
+
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="#home" class="navbar-link hover-underline active" onclick="openTab(event, 'home')">
+                            <div class="separator"></div>
+                            <span class="span">Home</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#appetizers" class="navbar-link hover-underline"
+                            onclick="openTab(event, 'appetizers')">
+                            <div class="separator"></div>
+                            <span class="span">APPETIZERS</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#Hakka" class="navbar-link hover-underline" onclick="openTab(event, 'Hakka')">
+                            <div class="separator"></div>
+                            <span class="span">Fusion's Hakka</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#mains" class="navbar-link hover-underline" onclick="openTab(event, 'mains')">
+                            <div class="separator"></div>
+                            <span class="span">MAINS</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#Continental" class="navbar-link hover-underline"
+                            onclick="openTab(event, 'Continental')">
+                            <div class="separator"></div>
+                            <span class="span">Continental</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#riceandbreads" class="navbar-link hover-underline"
+                            onclick="openTab(event, 'RiceandBreads')">
+                            <div class="separator"></div>
+                            <span class="span">Rice and Breads</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#desserts" class="navbar-link hover-underline" onclick="openTab(event, 'desserts')">
+                            <div class="separator"></div>
+                            <span class="span">DESSERTS</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item" id="bbb" data-bar>
+                        <a href="#bar" class="navbar-link hover-underline" onclick="openTab(event, 'bar')">
+                            <div class="separator"></div>
+                            <span class="span">BAR</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="text-center">
+                    <p class="headline-1 navbar-title">Visit Us</p>
+                    <address class="body-4">
+                        Clonsilla Avenue, Peterborough, Ontario, K9J 8B2.
+                    </address>
+                    <p class="body-4 navbar-text">Daily : 8.00 am to 10.00 pm</p>
+                    <a href="mailto:flavourfusion@gmail.com" class="body-4 sidebar-link">flavourfusion@gmail.com</a>
+                    <div class="separator"></div>
+                    <p class="contact-label">Booking Request</p>
+                    <a href="tel:+12496880823" class="body-1 contact-number hover-underline">
+                        +1-249-688-0823
+                    </a>
+                </div>
+            </nav>
+
+            <button class="nav-open-btn" id="hi" aria-label="open menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+        </div>
+    </header>
+    <!-- Home -->
+    <div class="tab-content active" id="home">
+        <section class="hero text-center" aria-label="home">
+            <ul class="hero-slider" data-hero-slider>
+                <li class="slider-item active" data-hero-slider-item>
+                    <div class="slider-bg">
+                        <img src="./assets/images/hero-slider-7.jpg" width="1880" height="950" alt=""
+                            class="img-cover img1">
+                    </div>
+                    <p class="label-2 section-subtitle slider-reveal">Traditional & Hygienic</p>
+                    <h1 class="display-1 hero-title slider-reveal">For the love of <br> delicious food</h1>
+                    <p class="body-2 hero-text slider-reveal">Come with family & feel the joy of mouthwatering food</p>
+                    <a href="#appetizers" class="btn btn-primary slider-reveal" onclick="openTab(event, 'appetizers')">
+                        <span class="text text-1">View Our Menu</span>
+                        <span class="text text-2" aria-hidden="true">View Our Menu</span>
+                    </a>
+                </li>
+                <li class="slider-item" data-hero-slider-item>
+                    <div class="slider-bg">
+                        <img src="./assets/images/hero-slider-8.jpg" width="1880" height="950" alt=""
+                            class="img-cover img2">
+                    </div>
+                    <p class="label-2 section-subtitle slider-reveal">Delightful Experience</p>
+                    <h1 class="display-1 hero-title slider-reveal">Flavors Inspired by <br> the Seasons</h1>
+                    <p class="body-2 hero-text slider-reveal">Come with family & feel the joy of mouthwatering food</p>
+                    <a href="#appetizers" class="btn btn-primary slider-reveal" onclick="openTab(event, 'appetizers')">
+                        <span class="text text-1">View Our Menu</span>
+                        <span class="text text-2" aria-hidden="true">View Our Menu</span>
+                    </a>
+                </li>
+                <li class="slider-item" data-hero-slider-item>
+                    <div class="slider-bg">
+                        <img src="./assets/images/hero-slider-10.jpg" width="1880" height="950" alt=""
+                            class="img-cover img3">
+                    </div>
+                    <p class="label-2 section-subtitle slider-reveal">Amazing & Delicious</p>
+                    <h1 class="display-1 hero-title slider-reveal">Where every flavor <br> tells a story</h1>
+                    <p class="body-2 hero-text slider-reveal">Come with family & feel the joy of mouthwatering food</p>
+                    <a href="#appetizers" class="btn btn-primary slider-reveal" onclick="openTab(event, 'appetizers')">
+                        <span class="text text-1">View Our Menu</span>
+                        <span class="text text-2" aria-hidden="true">View Our Menu</span>
+                    </a>
+                </li>
+            </ul>
+            <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+                <ion-icon name="chevron-back"></ion-icon>
+            </button>
+            <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+                <ion-icon name="chevron-forward"></ion-icon>
+            </button>
+            <a href="#bar" class="hero-btn has-after" onclick="openTab(event, 'bar')">
+                <img src="./assets/images/bar.png" width="48" height="48" alt="booking icon">
+                <span class="body-2 text-center span">BAR</span>
+            </a>
+        </section>
+    </div>
+    <!-- Appetizers -->
+    <div class="tab-content back-img" id="appetizers">
+        <section class="section menu" aria-label="menu-label">
+            <div class="container">
+                <div class="menu-list">
+
+                    <div class="Starters">
+                        <p class="section-subtitle title-1 text-center">Appetizers</p>
+                        <h2 class="headline-2 section-title text-center fix-underline">Starters</h2>
+                        <ul class="grid-list">
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/spinach cheese balls.jpg" width="100" height="100"
+                                            loading="lazy" alt="Spicy Cheese Spinach Balls" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Spinach Balls</a></h3>
+                                            <!-- <span class="badge label-1">Seasonal</span> -->
+                                            <img src="./assets/images/chilli.png" alt="chilli">
+                                            <span class="span title-2">$25.50</span>
+                                        </div>
+                                        <p class="card-text label-1">Crunchy deep-fried balls made from a flavorful
+                                            mixture of spinach, cheese, herbs, and spices.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/nacho.jpg" width="100" height="100" loading="lazy"
+                                            alt="Nachos" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Nachos</a></h3>
+                                            <span class="span title-2">$40.00</span>
+                                        </div>
+                                        <p class="card-text label-1">A classic Tex-Mex snack with crispy corn tortilla
+                                            chips topped with cheese and served with dips.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/nacho grande.jpg" width="100" height="100"
+                                            loading="lazy" alt="Nachos Grande" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Nachos Grande</a></h3>
+                                            <span class="badge label-1">Loaded</span>
+                                            <img src="./assets/images/chef-3.png" alt="chef">
+                                            <span class="span title-2">$50.00</span>
+                                        </div>
+                                        <p class="card-text label-1">A loaded version of classic nachos with generous
+                                            toppings and a hearty flavor.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Cottage Cheese Pesto.jpg" width="100" height="100"
+                                            loading="lazy" alt="Cottage Cheese Pesto" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Cottage Cheese Pesto</a>
+                                            </h3>
+                                            <span class="badge label-1">New</span>
+                                            <span class="span title-2">$39.00</span>
+                                        </div>
+                                        <p class="card-text label-1">Soft grilled paneer cubes tossed in creamy basil
+                                            pesto sauce for a rich aromatic flavor.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Cheese-Fondue.jpeg" width="100" height="100"
+                                            loading="lazy" alt="Cheese Fondue" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Cheese Fondue</a></h3>
+                                            <span class="span title-2">$25.00</span>
+                                        </div>
+                                        <p class="card-text label-1">A warm pot of melted cheese served with bread and
+                                            assorted dippers – a comforting European favorite.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Dragon paneer.jpg" width="100" height="100"
+                                            loading="lazy" alt="Dragon Paneer" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Dragon Paneer</a></h3>
+                                            <img src="./assets/images/chilli.png" alt="chilli">
+                                            <span class="span title-2">$49.00</span>
+                                        </div>
+                                        <p class="card-text label-1">Fiery Indo-Chinese style paneer dish tossed in
+                                            spicy dragon sauce with crunchy vegetables.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="TikkaMasala">
+                        <h2 class="headline-2 section-title text-center fix-underline">Tikka Masala</h2>
+                        <ul class="grid-list">
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Lasooni Paneer Tikka.jpg" width="100" height="100"
+                                            loading="lazy" alt="Lasooni Paneer Tikka" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Lasooni Paneer Tikka</a>
+                                            </h3>
+                                            <img src="./assets/images/chilli.png" alt="chilli">
+                                            <span class="span title-2">$25.50</span>
+                                        </div>
+                                        <p class="card-text label-1">Paneer marinated with garlic and traditional
+                                            spices, cooked in a tandoor for a smoky flavor.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/bhatti ka paneer.jpg" width="100" height="100"
+                                            loading="lazy" alt="Bhatti Ka Paneer" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Bhatti Ka Paneer</a></h3>
+                                            <span class="span title-2">$40.00</span>
+                                        </div>
+                                        <p class="card-text label-1">Paneer marinated in tandoori spices with bell
+                                            peppers, cooked in a tandoor for a smoky flavor.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/malai paneer.jpg" width="100" height="100"
+                                            loading="lazy" alt="Malai Paneer" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Malai Paneer</a></h3>
+                                            <img src="./assets/images/cashew-4.png" alt="cashew">
+                                            <span class="span title-2">$50.00</span>
+                                        </div>
+                                        <p class="card-text label-1">Soft paneer marinated with cream and cheese, cooked
+                                            slowly in a tandoor to perfection.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/panner three ways.jpg" width="100" height="100"
+                                            loading="lazy" alt="Paneer Three Ways" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Paneer Three Ways</a>
+                                            </h3>
+                                            <span class="badge label-1">New</span>
+                                            <img src="./assets/images/chef-3.png" alt="chef">
+                                            <span class="span title-2">$39.00</span>
+                                        </div>
+                                        <p class="card-text label-1">A trio of marinated paneer cubes in tandoori
+                                            spices, cream, and ajwain, cooked together for a unique flavor profile.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/mulayam paneer tikka.jpg" width="100" height="100"
+                                            loading="lazy" alt="Mulayam Paneer Tikka" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Mulayam Paneer Tikka</a>
+                                            </h3>
+                                            <span class="span title-2">$25.00</span>
+                                        </div>
+                                        <p class="card-text label-1">Soft and tender cubes of paneer marinated in yogurt
+                                            masala, glazed in the clay oven for a delicious flavor.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/multani paneer tikka.jpg" width="100" height="100"
+                                            loading="lazy" alt="Multani Paneer Tikka" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Multani Paneer Tikka</a>
+                                            </h3>
+                                            <span class="span title-2">$49.00</span>
+                                        </div>
+                                        <p class="card-text label-1">A delicious version of tandoori paneer cooked with
+                                            a blend of spices from the Multani style, offering a robust flavor.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape" class="shape shape-2 move-anim"> -->
+                    </div>
+
+                    <div class="Soup">
+                        <h2 class="headline-2 section-title text-center fix-underline">Soups & Salads</h2>
+                        <ul class="grid-list">
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Hot & Sour Soup.jpg" width="100" height="100"
+                                            loading="lazy" alt="Hot & Sour Soup" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Hot & Sour Soup</a></h3>
+                                            <span class="badge label-1">Seasonal</span>
+                                            <span class="span title-2">$6.99</span>
+                                        </div>
+                                        <p class="card-text label-1">A spicy and tangy Asian soup with rich flavors and
+                                            a savory broth.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/cream of mashroom Soup.jpg" width="100" height="100"
+                                            loading="lazy" alt="Cream of mushroom / tomato soup" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Cream of mushroom /
+                                                    tomato soup</a></h3>
+                                            <span class="span title-2">$5.49</span>
+                                        </div>
+                                        <p class="card-text label-1">A classic creamy soup perfect for comfort and
+                                            warmth.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/ceaser salad.jpg" width="100" height="100"
+                                            loading="lazy" alt="Caesar salad" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Caesar salad</a></h3>
+                                            <span class="span title-2">$7.99</span>
+                                        </div>
+                                        <p class="card-text label-1">Fresh and crunchy salad with a creamy Caesar
+                                            dressing.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/greek salad.jpg" width="100" height="100" loading="lazy"
+                                            alt="Greek salad" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Greek salad</a></h3>
+                                            <img src="./assets/images/vegan.png" alt="vegan">
+                                            <span class="span title-2">$7.49</span>
+                                        </div>
+                                        <p class="card-text label-1">A refreshing Mediterranean salad with a tangy
+                                            twist.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/tandoori chicken salad.jpg" width="100" height="100"
+                                            loading="lazy" alt="Tandoori chicken salad" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Tandoori chicken
+                                                    salad</a></h3>
+                                            <span class="badge label-1">New</span>
+                                            <img src="./assets/images/chilli.png" alt="chilli">
+                                            <span class="span title-2">$9.99</span>
+                                        </div>
+                                        <p class="card-text label-1">Smoky grilled tandoori chicken served over crisp
+                                            lettuce with a fresh mint dressing.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+        <img src="./assets/images/shape-6.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-4 move-anim">
+        <!-- <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape" class="shape shape-3 move-anim"> -->
+        <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-5 move-anim">
+    </div>
+    <!-- Hakka -->
+    <div class="tab-content back-img" id="Hakka">
+        <section class="section menu" aria-label="menu-label">
+            <div class="container">
+                <div class="menu-list">
+
+                    <div class="Fusion's Hakka">
+                        <p class="section-subtitle title-1 text-center">Fusion's Hakka</p>
+                        <h2 class="headline-2 section-title text-center fix-underline">Indo-Chinese Style</h2>
+
+                        <ul class="grid-list">
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Chilli chicken:paneer.jpg" width="100" height="100"
+                                            loading="lazy" alt="Chilli chicken/paneer (Dry / Gravy)" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Chilli chicken/paneer
+                                                    (Dry / Gravy)</a></h3>
+                                            <img src="./assets/images/chilli.png" alt="chilli">
+                                            <span class="span title-2">$18.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Spicy Indo-Chinese dish with crispy chicken tossed
+                                            in a tangy, garlic-chili sauce.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Paneer:Chicken 65.jpg" width="100" height="100"
+                                            loading="lazy" alt="Chicken 65" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Paneer/Chicken 65</a>
+                                            </h3>
+                                            <img src="./assets/images/chef-3.png" alt="chef">
+                                            <span class="span title-2">$17.49</span>
+                                        </div>
+                                        <p class="card-text label-1">South Indian spicy fried Veg/chicken cubes with
+                                            curry leaves, garlic, and chilies.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/lollipop.jpg" width="100" height="100" loading="lazy"
+                                            alt="Chicken lollipop" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Chicken lollipop</a></h3>
+                                            <span class="span title-2">$17.99</span>
+                                        </div>
+                                        <p class="card-text label-1">Chicken wings marinated in spicy batter and
+                                            deep-fried; served with tangy sauce.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Momos.jpg" width="100" height="100" loading="lazy"
+                                            alt="Momos (Steamed)" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Momos (Steamed)</a></h3>
+                                            <span class="badge label-1">New</span>
+                                            <span class="span title-2">$16.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Veggie/Hot Garlic Chicken/Szechuan</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="Mains (Veg/Non-Veg)">
+                        <h2 class="headline-2 section-title text-center fix-underline">Mains (Veg/Non-Veg)</h2>
+                        <ul class="grid-list">
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Manchurian.jpg" width="100" height="100" loading="lazy"
+                                            alt="Manchurian (Paneer / Chicken / Shrimp)" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Manchurian (Paneer /
+                                                    Chicken / Shrimp)</a></h3>
+                                            <span class="badge label-1">Seasonal</span>
+                                            <span class="span title-2">$18.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Fried balls or chunks in a savory Indo-Chinese
+                                            Manchurian gravy (Chicken +$2 / Shrimp +$3.95).</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Hot garlic Paneer.jpg" width="100" height="100"
+                                            loading="lazy" alt="Hot garlic (Paneer / Chicken / Shrimp)"
+                                            class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Hot garlic (Paneer /
+                                                    Chicken / Shrimp)</a></h3>
+                                            <img src="./assets/images/chilli.png" alt="chilli">
+                                            <img src="./assets/images/chef-3.png" alt="chef">
+                                            <span class="span title-2">$18.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Spicy garlic-based gravy tossed with choice of
+                                            protein and vegetables (Chicken +$2 / Shrimp +$3.95).</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Szechuan Paneer.jpg" width="100" height="100"
+                                            loading="lazy" alt="Szechuan (Paneer / Chicken / Shrimp)" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Szechuan (Paneer /
+                                                    Chicken / Shrimp)</a></h3>
+                                            <span class="span title-2">$18.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Bold and fiery gravy prepared with Szechuan sauce
+                                            and aromatics (Chicken +$2 / Shrimp +$3.95).</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Chilli garlic fish.jpg" width="100" height="100"
+                                            loading="lazy" alt="Chilli garlic fish" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Chilli garlic fish</a>
+                                            </h3>
+                                            <span class="badge label-1">New</span>
+                                            <span class="span title-2">$21.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Tender fish fillets tossed in a spicy chilli-garlic
+                                            sauce with herbs and spring onions.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Hakka fried rice.jpg" width="100" height="100"
+                                            loading="lazy" alt="Hakka fried rice (Veggie / Chicken / Shrimp)"
+                                            class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Hakka fried rice (Veggie
+                                                    / Chicken / Shrimp)</a></h3>
+                                            <span class="span title-2">$15.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Wok-tossed rice with vegetables or protein in
+                                            Indo-Chinese style (Chicken +$2 / Shrimp +$3.95).</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Szechuan fried rice.jpg" width="100" height="100"
+                                            loading="lazy" alt="Szechuan fried rice (Veggie / Chicken / Shrimp)"
+                                            class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Szechuan fried rice
+                                                    (Veggie / Chicken / Shrimp)</a></h3>
+                                            <span class="span title-2">$16.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Spicy and flavorful rice with Szechuan sauce and
+                                            crunchy vegetables (Chicken +$2 / Shrimp +$3.95).</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape" class="shape shape-2 move-anim"> -->
+                    </div>
+
+                    <div class="Noodles">
+                        <h2 class="headline-2 section-title text-center fix-underline">Noodles</h2>
+                        <ul class="grid-list">
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Hakka noodles.jpg" width="100" height="100"
+                                            loading="lazy" alt="Hakka noodles (Veggie / Chicken / Shrimp)"
+                                            class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Hakka noodles (Veggie /
+                                                    Chicken / Shrimp)</a></h3>
+                                            <!-- <span class="badge label-1">Seasonal</span> -->
+                                            <!-- <span class="chef">👨🏻‍🍳 </span> -->
+                                            <!-- <img src="./assets/images/cashew-4.png" alt="cashew"> -->
+                                            <span class="span title-2">$15.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Classic Indo-Chinese noodles stir-fried with
+                                            veggies or meat in soy-based sauce (Chicken +$2 / Shrimp +$3.95).</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Hot garlic noodles.jpg" width="100" height="100"
+                                            loading="lazy" alt="Hot garlic noodles (Veggie / Chicken / Shrimp)"
+                                            class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Hot garlic noodles
+                                                    (Veggie / Chicken / Shrimp)</a></h3>
+                                            <!-- <img src="./assets/images/cashew-2.png" alt="cashew"> -->
+                                            <span class="span title-2">$16.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Spicy noodles tossed in hot garlic sauce and
+                                            sautéed vegetables (Chicken +$2 / Shrimp +$3.95).</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Szechuan noodles.jpg" width="100" height="100"
+                                            loading="lazy" alt="Szechuan noodles (Veggie / Chicken / Shrimp)"
+                                            class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Szechuan noodles (Veggie
+                                                    / Chicken / Shrimp)</a></h3>
+                                            <!-- <img src="./assets/images/cashew-3.png" alt="cashew"> -->
+
+                                            <span class="span title-2">$16.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Noodles with bold, spicy Szechuan flavors, loaded
+                                            with veggies and protein (Chicken +$2 / Shrimp +$3.95).</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape" class="shape shape-2 move-anim"> -->
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+        <img src="./assets/images/shape-6.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-4 move-anim">
+        <!-- <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape" class="shape shape-3 move-anim"> -->
+        <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-5 move-anim">
+    </div>
+    <!-- Mains -->
+    <div class="tab-content back-img" id="mains">
+        <section class="section menu" aria-label="menu-label">
+            <div class="container">
+                <div class="menu-list">
+
+                    <div class="Curry(Vegetarian)">
+                        <p class="section-subtitle title-1 text-center">Mains</p>
+                        <h2 class="headline-2 section-title text-center fix-underline">Curry(Vegetarian)</h2>
+                        <ul class="grid-list">
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Fusion Paneer.jpg" width="100" height="100"
+                                            loading="lazy" alt="Sp. Fusion Paneer" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Sp.Fusion Paneer</a></h3>
+                                            <!-- <span class="badge label-1">Seasonal</span> -->
+                                            <img src="./assets/images/cashew-4.png" alt="cashew">
+                                            <span class="span title-2">$19.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Green peas and cottage cheese cooked in a rich
+                                            creamy special-based gravy.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Shahi kofta.jpg" width="100" height="100" loading="lazy"
+                                            alt="Shahi kofta" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Shahi kofta</a></h3>
+                                            <img src="./assets/images/chef-3.png" alt="chef">
+                                            <span class="span title-2">$20.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Dumplings of cottage cheese & potatoes served in a
+                                            flavorsome Mughal-style sauce.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Paneer makhanwala.jpg" width="100" height="100"
+                                            loading="lazy" alt="Paneer makhanwala" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Paneer makhanwala</a>
+                                            </h3>
+                                            <span class="span title-2">$19.90</span>
+                                        </div>
+                                        <p class="card-text label-1">Fresh paneer simmered in a buttery tomato gravy
+                                            with mild spices.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Paneer tawa masala.jpg" width="100" height="100"
+                                            loading="lazy" alt="Paneer tawa masala" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Paneer tawa masala</a>
+                                            </h3>
+                                            <span class="badge label-1">New</span>
+                                            <span class="span title-2">$19.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Tandoori paneer tossed with bell peppers in a spicy
+                                            yellow gravy.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Lasooni palak.jpg" width="100" height="100"
+                                            loading="lazy" alt="Lasooni palak" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Lasooni palak</a></h3>
+                                            <span class="span title-2">$19.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Fresh spinach purée with herbs and garlic. Choice
+                                            of Potato / Mushroom / Paneer / Corn.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Bhindi do pyaza.jpg" width="100" height="100"
+                                            loading="lazy" alt="Bhindi do pyaz" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Bhindi do pyaz</a></h3>
+                                            <span class="span title-2">$18.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Okra sautéed with onions and tangy dry mango
+                                            powder.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Baingan Patiala.jpg" width="100" height="100"
+                                            loading="lazy" alt="Baingan Patiala" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Baingan Patiala</a></h3>
+                                            <!-- <span class="badge label-1">Seasonal</span> -->
+                                            <img src="./assets/images/cashew-4.png" alt="cashew">
+                                            <span class="span title-2">$19.45</span>
+                                        </div>
+                                        <p class="card-text label-1">Baby eggplant tempered with onion seeds and
+                                            traditional herbs.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Adraki aloo gobhi.jpg" width="100" height="100"
+                                            loading="lazy" alt="Adraki aloo gobhi" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Adraki aloo gobhi</a>
+                                            </h3>
+                                            <img src="./assets/images/chef-3.png" alt="chef">
+                                            <span class="span title-2">$18.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Potato and cauliflower cooked with ginger-spiced
+                                            thick masala.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Soya chaap butter masala.jpg" width="100" height="100"
+                                            loading="lazy" alt="Soya chaap butter masala" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Soya chaap butter
+                                                    masala</a></h3>
+                                            <span class="span title-2">$19.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Soy chaap chunks simmered in rich tomato onion
+                                            gravy.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Chana masala.jpg" width="100" height="100"
+                                            loading="lazy" alt="Chana masala" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Chana masala</a></h3>
+                                            <span class="badge label-1">New</span>
+                                            <span class="span title-2">$18.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Chickpeas cooked with cumin, coriander, garam
+                                            masala & turmeric.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Cheesy vegetable makhmali.jpg" width="100" height="100"
+                                            loading="lazy" alt="Cheesy vegetable makhmali" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Cheesy vegetable
+                                                    makhmali</a></h3>
+                                            <span class="span title-2">$19.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Mixed vegetables in rich cashew sauce topped with
+                                            melted cheese.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Achari paneer.jpg" width="100" height="100"
+                                            loading="lazy" alt="Achari paneer" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Achari paneer</a></h3>
+                                            <span class="span title-2">$18.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Tandoori paneer cooked in spiced pickling-style
+                                            tangy sauce.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="Curry(Non-Vegetarian)">
+                        <!-- <p class="section-subtitle title-1 text-center">Curry(Non-Vegetarian)</p> -->
+                        <h2 class="headline-2 section-title text-center fix-underline">Curry(Non-Vegetarian)</h2>
+                        <ul class="grid-list">
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Chicken Korma.jpg" width="100" height="100"
+                                            loading="lazy" alt="Sp. Chicken Korma" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Sp. Chicken Korma</a>
+                                            </h3>
+                                            <!-- <span class="badge label-1">Seasonal</span> -->
+                                            <img src="./assets/images/cashew-4.png" alt="cashew">
+                                            <span class="span title-2">$20.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Tender pieces of chicken cooked in a creamy white
+                                            sauce with coriander and black pepper.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Butter Chicken .jpg" width="100" height="100"
+                                            loading="lazy" alt="Butter Chicken (Murgh Makhani)" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Butter Chicken (Murgh
+                                                    Makhani)</a></h3>
+                                            <img src="./assets/images/chef-3.png" alt="chef">
+                                            <span class="span title-2">$20.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Boneless tandoori chicken in buttery tomato gravy
+                                            with dry fenugreek.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Malai Methi Murgh.jpg" width="100" height="100"
+                                            loading="lazy" alt="Malai Methi Murgh" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Malai Methi Murgh</a>
+                                            </h3>
+                                            <span class="span title-2">$19.90</span>
+                                        </div>
+                                        <p class="card-text label-1">Creamy chicken curry with fenugreek flavors and
+                                            boneless chicken.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Mutton Rarha.jpg" width="100" height="100"
+                                            loading="lazy" alt="Mutton Rarha" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Mutton Rarha</a></h3>
+                                            <span class="badge label-1">New</span>
+                                            <span class="span title-2">$19.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Boneless lamb cooked in roasted spices, tomato, and
+                                            onion gravy.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Delhi Butter Chicken.jpg" width="100" height="100"
+                                            loading="lazy" alt="Delhi Butter Chicken" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Delhi Butter Chicken</a>
+                                            </h3>
+                                            <span class="span title-2">$19.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Spicier and less creamy version of the classic
+                                            Butter Chicken.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Chicken Tikka Masala.jpg" width="100" height="100"
+                                            loading="lazy" alt="Chicken Tikka Masala" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Chicken Tikka Masala</a>
+                                            </h3>
+                                            <span class="span title-2">$18.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Roasted chicken and peppers in thick spicy curry
+                                            sauce.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Murgh Kali Mirch.jpg" width="100" height="100"
+                                            loading="lazy" alt="Murgh Kali Mirch" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Murgh Kali Mirch</a></h3>
+                                            <!-- <span class="badge label-1">Seasonal</span> -->
+                                            <img src="./assets/images/cashew-4.png" alt="cashew">
+                                            <span class="span title-2">$19.45</span>
+                                        </div>
+                                        <p class="card-text label-1">Boneless chicken with fresh black pepper and
+                                            coriander.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Kadhai Curry.jpg" width="100" height="100"
+                                            loading="lazy" alt="Kadhai Curry" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Kadhai Curry</a></h3>
+                                            <img src="./assets/images/chef-3.png" alt="chef">
+                                            <span class="span title-2">$18.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Stir-fried with bell peppers, chilies, and
+                                            coriander seeds(Chicken / Lamb / Shrimp)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Lamb Roganjosh.jpg" width="100" height="100"
+                                            loading="lazy" alt="Lamb Roganjosh" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Lamb Roganjosh</a></h3>
+                                            <span class="span title-2">$19.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Kashmiri-style lamb curry with saffron, onions, and
+                                            yogurt.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Goat Masala.jpg" width="100" height="100" loading="lazy"
+                                            alt="Goat Masala" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Goat Masala</a></h3>
+                                            <span class="badge label-1">New</span>
+                                            <span class="span title-2">$18.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Ontario goat meat cooked with fragrant spices.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Goat Curry.jpg" width="100" height="100" loading="lazy"
+                                            alt="Goat Curry" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Goat Curry</a></h3>
+                                            <span class="span title-2">$19.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Coconut-tomato curry with coastal flavors from
+                                            Goa(Fish / Shrimp)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Bhuna Ghosht.jpg" width="100" height="100"
+                                            loading="lazy" alt="Bhuna Ghosht" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Bhuna Ghosht</a></h3>
+                                            <span class="span title-2">$18.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Beef curry with peppers and sautéed onions.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+        <img src="./assets/images/shape-6.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-4 move-anim">
+        <!-- <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape" class="shape shape-3 move-anim"> -->
+        <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-5 move-anim">
+    </div>
+    <!-- Continental -->
+    <div class="tab-content back-img" id="Continental">
+        <section class="section menu" aria-label="menu-label">
+            <div class="container">
+                <div class="menu-list">
+
+                    <div class="Antipasto">
+                        <p class="section-subtitle title-1 text-center">Continental</p>
+                        <h2 class="headline-2 section-title text-center fix-underline">Antipasto</h2>
+                        <ul class="grid-list">
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Bruschetta al Pomodoro.jpg" width="100" height="100"
+                                            loading="lazy" alt="Bruschetta al Pomodoro" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Bruschetta al
+                                                    Pomodoro</a></h3>
+                                            <img src="./assets/images/vegan.png" alt="vegan">
+                                            <span class="span title-2">$12.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Toasted Italian bread topped with marinated cherry
+                                            tomatoes, garlic, and fresh basil.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Stuffed Mushrooms.jpg" width="100" height="100"
+                                            loading="lazy" alt="Stuffed Mushrooms" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Stuffed Mushrooms</a>
+                                            </h3>
+                                            <img src="./assets/images/chef-3.png" alt="chef">
+                                            <span class="span title-2">$14.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Oven-baked mushrooms stuffed with cheese, herbs,
+                                            and breadcrumbs.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Caprese Salad.jpg" width="100" height="100"
+                                            loading="lazy" alt="Caprese Salad" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Caprese Salad</a></h3>
+                                            <span class="span title-2">$17.99</span>
+                                        </div>
+                                        <p class="card-text label-1">Slices of fresh mozzarella, tomatoes, and basil,
+                                            drizzled with olive oil and balsamic glaze.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Arancini.jpg" width="100" height="100" loading="lazy"
+                                            alt="Arancini" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Arancini</a></h3>
+                                            <span class="badge label-1">New</span>
+                                            <span class="span title-2">$17.49</span>
+                                        </div>
+                                        <p class="card-text label-1">Crispy golden risotto balls filled with cheese and
+                                            herbs, served with marinara sauce.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Garlic Bread with Cheese.jpg" width="100" height="100"
+                                            loading="lazy" alt="Garlic Bread with Cheese" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Garlic Bread with
+                                                    Cheese</a></h3>
+                                            <span class="span title-2">$13.99</span>
+                                        </div>
+                                        <p class="card-text label-1">Italian-style baked bread loaded with cheese and
+                                            garlic butter.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="Wood-Fired Pizzas">
+                        <h2 class="headline-2 section-title text-center fix-underline">Wood-Fired Pizzas</h2>
+                        <ul class="grid-list">
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Pizza Margherita.jpg" width="100" height="100"
+                                            loading="lazy" alt="Pizza Margherita" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Pizza Margherita</a></h3>
+                                            <span class="span title-2">$18.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Thin-crust wood-fired pizza with tomato sauce,
+                                            mozzarella & basil.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Pizza Quattro Formaggi.jpg" width="100" height="100"
+                                            loading="lazy" alt="Pizza Quattro Formaggi" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Pizza Quattro
+                                                    Formaggi</a></h3>
+                                            <span class="span title-2">$22.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Four cheese medley - mozzarella, gorgonzola,
+                                            parmesan & fontina.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Pizza Verdure Grigliate.jpg" width="100" height="100"
+                                            loading="lazy" alt="Pizza Verdure Grigliate" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Pizza Verdure
+                                                    Grigliate</a></h3>
+                                            <img src="./assets/images/vegan.png" alt="vegan">
+                                            <span class="span title-2">$21.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Grilled vegetables, mushrooms, olives, and bell
+                                            peppers over wood-fired crust.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Pizza Capricciosa.jpg" width="100" height="100"
+                                            loading="lazy" alt="Pizza Capricciosa" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Pizza Capricciosa</a>
+                                            </h3>
+                                            <img src="./assets/images/chef-3.png" alt="chef">
+                                            <span class="span title-2">$22.45</span>
+                                        </div>
+                                        <p class="card-text label-1">Topped with mushrooms, artichokes, olives, and
+                                            mozzarella.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Pizza Arrabbiata.jpg" width="100" height="100"
+                                            loading="lazy" alt="Pizza Arrabbiata" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Pizza Arrabbiata</a></h3>
+                                            <img src="./assets/images/chilli.png" alt="chilli">
+                                            <span class="span title-2">$20.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Spicy tomato base with chili flakes, onions, olives
+                                            & cheese.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Pizza Funghi e Spinaci.jpg" width="100" height="100"
+                                            loading="lazy" alt="Pizza Funghi e Spinaci" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Pizza Funghi e
+                                                    Spinaci</a></h3>
+                                            <span class="span title-2">$21.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A rustic pizza with mushrooms, spinach, garlic, and
+                                            mozzarella.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="Pasta">
+                        <h2 class="headline-2 section-title text-center fix-underline">Pasta</h2>
+                        <ul class="grid-list">
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Penne Alfredo.jpg" width="100" height="100"
+                                            loading="lazy" alt="Penne Alfredo" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Penne Alfredo</a></h3>
+                                            <span class="span title-2">$19.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Creamy white sauce pasta with mushrooms and herbs.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Spaghetti Arrabbiata.jpg" width="100" height="100"
+                                            loading="lazy" alt="Spaghetti Arrabbiata" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Spaghetti Arrabbiata</a>
+                                            </h3>
+                                            <img src="./assets/images/chilli.png" alt="chilli">
+                                            <span class="span title-2">$18.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Tangy and spicy tomato-based pasta with garlic and
+                                            chili.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Fusilli Pesto Pastae.jpg" width="100" height="100"
+                                            loading="lazy" alt="Fusilli Pesto Pastae" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Fusilli Pesto Pastae</a>
+                                            </h3>
+                                            <span class="span title-2">$20.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Basil pesto tossed with pine nuts, cherry tomatoes
+                                            & parmesan.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Lasagna al Forno.jpg" width="100" height="100"
+                                            loading="lazy" alt="Lasagna al Forno" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Lasagna al Forno</a></h3>
+                                            <span class="span title-2">$22.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Layered baked pasta with béchamel, tomato sauce,
+                                            cheese, and veggies.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Ravioli in Creole Sauce.jpg" width="100" height="100"
+                                            loading="lazy" alt="Ravioli in Creole Sauce" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Ravioli in Creole
+                                                    Sauce</a></h3>
+                                            <img src="./assets/images/chef-3.png" alt="chef">
+                                            <span class="span title-2">$20.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Stuffed pasta pockets in mildly spicy Creole tomato
+                                            cream sauce.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Mac & Cheese Bake.jpg" width="100" height="100"
+                                            loading="lazy" alt="Mac & Cheese Bake" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Mac & Cheese Bake</a>
+                                            </h3>
+                                            <span class="span title-2">$19.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Elbow pasta baked in a gooey cheese sauce topped
+                                            with crispy crust.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+        <img src="./assets/images/shape-6.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-4 move-anim">
+        <!-- <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape" class="shape shape-3 move-anim"> -->
+        <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-5 move-anim">
+    </div>
+    <!-- Rice and Breads -->
+    <div class="tab-content back-img" id="RiceandBreads">
+        <section class="section menu" aria-label="menu-label">
+            <div class="container">
+                <div class="menu-list">
+
+                    <div class="Breads">
+                        <p class="section-subtitle title-1 text-center">Rice and Breads</p>
+                        <h2 class="headline-2 section-title text-center fix-underline">Breads</h2>
+                        <ul class="grid-list">
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Naan.jpg" width="100" height="100" loading="lazy"
+                                            alt="Plain/Butter Naan" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Plain/Butter Naan</a>
+                                            </h3>
+                                            <span class="span title-2">$4.45</span>
+                                        </div>
+                                        <p class="card-text label-1">Soft tandoor-baked Indian flatbread.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Garlic Naan.jpg" width="100" height="100" loading="lazy"
+                                            alt="Garlic Naan" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Garlic Naan</a></h3>
+                                            <!-- <img src="./assets/images/chef-3.png" alt="chef"> -->
+                                            <img src="./assets/images/vegan.png" alt="vegan">
+                                            <span class="span title-2">$5.55</span>
+                                        </div>
+                                        <p class="card-text label-1">Naan infused with garlic and herbs for bold flavor.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Chilli Naan.jpg" width="100" height="100" loading="lazy"
+                                            alt="Chilli Naan" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Chilli Naan</a></h3>
+                                            <img src="./assets/images/chilli.png" alt="chilli">
+                                            <span class="span title-2">$17.99</span>
+                                        </div>
+                                        <p class="card-text label-1">Spicy naan loaded with green chilies and spice.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Cheese Garlic Naan.jpg" width="100" height="100"
+                                            loading="lazy" alt="Cheese Garlic Naan" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Cheese Garlic Naan</a>
+                                            </h3>
+                                            <!-- <span class="badge label-1">New</span> -->
+                                            <img src="./assets/images/chef-3.png" alt="chef">
+                                            <span class="span title-2">$9.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Naan filled with melted cheese and garlic.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Lacha Paratha.jpg" width="100" height="100"
+                                            loading="lazy" alt="Lacha Paratha – Plain/Chilli/Pudhina" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Lacha Paratha –
+                                                    Plain/Chilli/Pudhina</a></h3>
+                                            <span class="span title-2">$5.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Flaky, layered bread with crispy edges.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Roti Ki Tokri.jpg" width="100" height="100"
+                                            loading="lazy" alt="Roti Ki Tokri (Bread Basket)" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Roti Ki Tokri (Bread
+                                                    Basket)</a></h3>
+                                            <span class="badge label-1">New</span>
+                                            <span class="span title-2">$15.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Combo basket: Plain Naan, Lacha Paratha, Roti,
+                                            Onion Kulcha.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="Biryani & Rice">
+                        <h2 class="headline-2 section-title text-center fix-underline">Biryani & Rice</h2>
+                        <ul class="grid-list">
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Chicken Biryani.jpg" width="100" height="100"
+                                            loading="lazy" alt="Chicken Biryani" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Chicken Biryani</a></h3>
+                                            <img src="./assets/images/chilli.png" alt="chilli">
+                                            <span class="span title-2">$20.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Aromatic basmati rice cooked with chicken, spices,
+                                            and herbs.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Goat Biryani.jpg" width="100" height="100"
+                                            loading="lazy" alt="Lamb/Goat Biryani" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Lamb/Goat Biryani</a>
+                                            </h3>
+                                            <span class="span title-2">$22.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Biryani rice blended with tender lamb/goat and
+                                            traditional spices.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Vegetable Biryani.jpg" width="100" height="100"
+                                            loading="lazy" alt="Vegetable Biryani" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Vegetable Biryani</a>
+                                            </h3>
+                                            <!-- <img src="./assets/images/vegan.png" alt="vegan"> -->
+                                            <span class="span title-2">$21.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A flavorful rice dish with assorted seasonal
+                                            vegetables and spices.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Hyderabadi Dum Chicken Biryani.jpg" width="100"
+                                            height="100" loading="lazy" alt="Hyderabadi Dum Chicken Biryani"
+                                            class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Hyderabadi Dum Chicken
+                                                    Biryani</a></h3>
+                                            <img src="./assets/images/chef-3.png" alt="chef">
+                                            <span class="span title-2">$22.45</span>
+                                        </div>
+                                        <p class="card-text label-1">Topped with mushrooms, artichokes, olives, and
+                                            mozzarella.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Plain Rice.jpg" width="100" height="100" loading="lazy"
+                                            alt="Safed Chawal (Plain Rice)" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Safed Chawal (Plain
+                                                    Rice)</a></h3>
+                                            <img src="./assets/images/vegan.png" alt="vegan">
+                                            <span class="span title-2">$4.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Simple steamed basmati rice.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Kesari Pulao.jpg" width="100" height="100"
+                                            loading="lazy" alt="Kesari Pulao" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Kesari Pulao</a></h3>
+                                            <span class="span title-2">$14.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Fragrant saffron-infused basmati rice.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="Dal">
+                        <h2 class="headline-2 section-title text-center fix-underline">Dal</h2>
+                        <ul class="grid-list">
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Dal Makhani.jpg" width="100" height="100" loading="lazy"
+                                            alt="Dal Makhani" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Dal Makhani</a></h3>
+                                            <span class="span title-2">$10.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A creamy North Indian delicacy made from
+                                            slow-cooked black lentils (urad dal) and kidney beans (rajma) in a rich
+                                            tomato and cream-based gravy.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Dal Dhokli.jpg" width="100" height="100" loading="lazy"
+                                            alt="Dal Dhokli" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Dal Dhokli</a></h3>
+                                            <span class="span title-2">$12.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A rustic-style dal made from a mix of five lentils,
+                                            tempered with cumin and garlic for a hearty flavor.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Dal Double Tadka.jpg" width="100" height="100"
+                                            loading="lazy" alt="Dal Double Tadka" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Dal Double Tadka</a></h3>
+                                            <img src="./assets/images/chilli.png" alt="chilli">
+                                            <span class="span title-2">$11.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A flavorful rice dish with assorted seasonal
+                                            vegetables and spices.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Dal Tadka.jpg" width="100" height="100" loading="lazy"
+                                            alt="Dal Tadka" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Dal Tadka</a></h3>
+                                            <img src="./assets/images/chef-3.png" alt="chef">
+                                            <span class="span title-2">$12.45</span>
+                                        </div>
+                                        <p class="card-text label-1">Classic yellow dal (usually toor dal) tempered with
+                                            cumin, garlic, and spices.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="Condiments">
+                        <h2 class="headline-2 section-title text-center fix-underline">Condiments</h2>
+                        <ul class="grid-list">
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Plain Curd.jpg" width="100" height="100" loading="lazy"
+                                            alt="Plain Curd" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Plain Curd</a></h3>
+                                            <!-- <img src="./assets/images/chilli.png" alt="chilli"> -->
+                                            <span class="span title-2">$2.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Fresh, plain yogurt — cooling and soothing, often
+                                            served as a side with spicy meals.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Boondi Raita.jpg" width="100" height="100"
+                                            loading="lazy" alt="Boondi/Pinapple/Mint Raita" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Boondi Raita</a></h3>
+                                            <img src="./assets/images/chef-3.png" alt="chef">
+                                            <span class="span title-2">$2.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Yogurt mixed with crunchy fried boondi (tiny gram
+                                            flour balls)/Pinapple/Mint, spiced lightly.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Papad.jpg" width="100" height="100" loading="lazy"
+                                            alt="Papad" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Papad</a></h3>
+                                            <img src="./assets/images/vegan.png" alt="vegan">
+                                            <span class="span title-2">$2.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Classic roasted or fried lentil wafer, served crisp
+                                            — ideal side dish or appetizer.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Masala Papad.jpg" width="100" height="100"
+                                            loading="lazy" alt="Masala Papad" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Masala Papad</a></h3>
+                                            <img src="./assets/images/vegan.png" alt="vegan">
+                                            <img src="./assets/images/chilli.png" alt="chilli">
+                                            <span class="span title-2">$4.45</span>
+                                        </div>
+                                        <p class="card-text label-1">Crispy papad topped with chopped onions, tomatoes,
+                                            spices, and herbs.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Masala Cheese Papad.jpg" width="100" height="100"
+                                            loading="lazy" alt="Masala Cheese Papad" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Masala Cheese Papad</a>
+                                            </h3>
+                                            <img src="./assets/images/chef-3.png" alt="chef">
+                                            <span class="span title-2">$4.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A fusion papad loaded with cheese and masala
+                                            toppings — crunchy, cheesy, and spicy.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/free Papad.jpg" width="100" height="100" loading="lazy"
+                                            alt="Free Dry Papad (with meal)" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Free Dry Papad (with
+                                                    meal)</a></h3>
+                                            <span class="span title-2">Free</span>
+                                        </div>
+                                        <p class="card-text label-1">Complimentary dry papad served with thali or full
+                                            meals.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+        <img src="./assets/images/shape-6.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-4 move-anim">
+        <!-- <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape" class="shape shape-3 move-anim"> -->
+        <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-5 move-anim">
+    </div>
+    <!-- Desserts -->
+    <div class="tab-content back-img" id="desserts">
+        <section class="section menu" aria-label="menu-label">
+            <div class="container">
+                <div class="menu-list">
+
+                    <div class="Special Selection">
+                        <p class="section-subtitle title-1 text-center">Desserts</p>
+                        <h2 class="headline-2 section-title text-center fix-underline">Special Selection</h2>
+                        <ul class="grid-list">
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Butterscotch Caramel Cake.jpg" width="100" height="100"
+                                            loading="lazy" alt="Butterscotch Caramel Cake" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Butterscotch Caramel
+                                                    Cake</a></h3>
+                                            <span class="span title-2">$12.45</span>
+                                        </div>
+                                        <p class="card-text label-1">Moist cake layered with butterscotch icing, rich
+                                            caramel sauce, and crushed toasted pecans.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Madagascar Vanilla Budino.jpg" width="100"
+                                            height="100" loading="lazy" alt="Brûléed Madagascar Vanilla Budino"
+                                            class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Brûléed Madagascar
+                                                    Vanilla Budino</a></h3>
+                                            <img src="./assets/images/chef-3.png" alt="chef">
+                                            <span class="span title-2">$15.55</span>
+                                        </div>
+                                        <p class="card-text label-1">Creamy Madagascar vanilla pudding topped with
+                                            caramelized sugar and raspberries.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Tiramisu.jpg" width="100" height="100" loading="lazy"
+                                            alt="Tiramisu" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Tiramisu</a></h3>
+                                            <img src="./assets/images/chilli.png" alt="chilli">
+                                            <span class="span title-2">$7.99</span>
+                                        </div>
+                                        <p class="card-text label-1">Traditional Italian dessert with coffee-dipped
+                                            sponge cake, amaretto-mascarpone cream, and cocoa.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Chocolate Brownie Cheesecake.jpg" width="100"
+                                            height="100" loading="lazy" alt="Chocolate Brownie Cheesecake"
+                                            class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Chocolate Brownie
+                                                    Cheesecake</a></h3>
+                                            <!-- <span class="badge label-1">New</span> -->
+                                            <img src="./assets/images/chef-3.png" alt="chef">
+                                            <span class="span title-2">$9.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Decadent cheesecake on a graham cracker crust,
+                                            topped with chocolate ganache and brownie pieces.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Affogato.jpg" width="100" height="100" loading="lazy"
+                                            alt="Affogato" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Affogato</a></h3>
+                                            <span class="badge label-1">Seasonal</span>
+                                            <span class="span title-2">$8.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Freshly brewed espresso poured over one scoop of
+                                            vanilla bean gelato, served with biscotti.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Gelato.jpg" width="100" height="100" loading="lazy"
+                                            alt="Gelato (Daily Selection)" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Gelato (Daily
+                                                    Selection)</a></h3>
+                                            <span class="badge label-1">New</span>
+                                            <span class="span title-2">$8.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A rotating selection of artisanal gelato flavors,
+                                            served with biscotti.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="Indian Desserts">
+                        <h2 class="headline-2 section-title text-center fix-underline">Indian Desserts</h2>
+                        <ul class="grid-list">
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Jalebi.jpg" width="100" height="100" loading="lazy"
+                                            alt="Jalebi" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Jalebi</a></h3>
+                                            <span class="span title-2">$8.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Traditional deep-fried spirals soaked in saffron
+                                            sugar syrup. Crisp and juicy.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Stuffed Kesar Pista Gulab Jamun.jpg" width="100"
+                                            height="100" loading="lazy" alt="Stuffed Kesar Pista Gulab Jamun"
+                                            class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Stuffed Kesar Pista Gulab
+                                                    Jamun</a></h3>
+                                            <img src="./assets/images/chef-3.png" alt="chef">
+                                            <span class="span title-2">$10.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Soft khoya dumplings stuffed with saffron and
+                                            pistachios, soaked in rose syrup.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Moong Dal Halwa.jpg" width="100" height="100"
+                                            loading="lazy" alt="Moong Dal Halwa" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Moong Dal Halwa</a></h3>
+                                            <img src="./assets/images/cashew-4.png" alt="cashew">
+                                            <span class="span title-2">$11.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Rich lentil-based dessert made with moong dal,
+                                            ghee, and nuts.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Halwa.jpg" width="100" height="100" loading="lazy"
+                                            alt="Seasonal Halwa" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Seasonal Halwa</a></h3>
+                                            <span class="badge label-1">Seasonal</span>
+                                            <span class="span title-2">$12.45</span>
+                                        </div>
+                                        <p class="card-text label-1">A seasonal specialty halwa (e.g., gajar, dudhi, or
+                                            kesar badam) based on availability.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Vanilla : Chocolate : Strawberry Ice Cream.jpg"
+                                            width="100" height="100" loading="lazy"
+                                            alt="Vanilla / Chocolate / Strawberry Ice Cream" class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Vanilla / Chocolate /
+                                                    Strawberry Ice Cream</a></h3>
+                                            <!-- <img src="./assets/images/vegan.png" alt="vegan"> -->
+                                            <span class="span title-2">$8.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Classic scoop selections of creamy flavored ice
+                                            cream.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Chocolate Mud Pie.jpg" width="100" height="100"
+                                            loading="lazy" alt="Chocolate Mud Pie with Vanilla Ice Cream"
+                                            class="img-menu">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Chocolate Mud Pie with
+                                                    Vanilla Ice Cream</a></h3>
+                                            <span class="badge label-1">New</span>
+                                            <span class="span title-2">$11.95</span>
+                                        </div>
+                                        <p class="card-text label-1">Gooey chocolate mud pie served warm with a scoop of
+                                            vanilla ice cream.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+        <img src="./assets/images/shape-6.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-4 move-anim">
+        <!-- <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape" class="shape shape-3 move-anim"> -->
+        <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-5 move-anim">
+    </div>
+    <!-- Bar -->
+    <div class="tab-content back-img" id="bar">
+        <section class="section menu" aria-label="menu-label">
+            <div class="container">
+                <div class="menu-list">
+
+                    <div class="Red Wines">
+                        <p class="section-subtitle title-1 text-center">bar</p>
+                        <h2 class="headline-2 section-title text-center fix-underline">Red Wines</h2>
+                        <ul class="grid-list">
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/McPherson Wines - Shiraz.jpg" width="100" height="100"
+                                            loading="lazy" alt="McPherson Wines - Shiraz" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">McPherson Wines -
+                                                    Shiraz</a></h3>
+                                            <span class="span title-2">$34.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A bold and full-bodied Shiraz with rich dark berry
+                                            flavors, hints of spice, and smooth tannins, perfect for pairing with
+                                            grilled meats.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Tin Roof Cellars.webp" width="100" height="100"
+                                            loading="lazy" alt="Tin Roof Cellars - Merlot" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Tin Roof Cellars -
+                                                    Merlot</a></h3>
+                                            <span class="span title-2">$34.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A smooth and velvety Merlot with ripe plum, cherry,
+                                            and vanilla notes, offering a balanced and soft finish.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Cline Cellars.webp" width="100" height="100"
+                                            loading="lazy" alt="Cline Cellars - Zinfande" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Cline Cellars -
+                                                    Zinfande</a></h3>
+                                            <span class="span title-2">$32.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A juicy and fruit-forward Zinfandel with flavors of
+                                            blackberries, licorice, and spice, ideal for barbecue dishes.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/McManis.webp" width="100" height="100" loading="lazy"
+                                            alt="McManis - Cabernet Sauvignon" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">McManis - Cabernet
+                                                    Sauvignon</a></h3>
+                                            <span class="span title-2">$42.95 </span>
+                                        </div>
+                                        <p class="card-text label-1">A rich and complex Cabernet with notes of
+                                            blackcurrant, oak, and vanilla, offering a lingering and structured finish.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Smoking Loon.webp" width="100" height="100"
+                                            loading="lazy" alt="Smoking Loon - Cabernet Sauvignon" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Smoking Loon - Cabernet
+                                                    Sauvignon</a></h3>
+                                            <span class="span title-2">$32.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A medium-bodied Cabernet Sauvignon with black
+                                            cherry, tobacco, and cocoa flavors, delivering a smooth and easy-drinking
+                                            experience.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Josh - Cabernet Sauvignon.webp" width="100" height="100"
+                                            loading="lazy" alt="Josh - Cabernet Sauvignon" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Josh - Cabernet
+                                                    Sauvignon</a></h3>
+                                            <span class="span title-2">$40.95</span>
+                                        </div>
+                                        <p class="card-text label-1">An elegant and well-balanced Cabernet Sauvignon
+                                            with ripe black fruit, hints of oak, and a silky texture.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Mommessin.webp" width="100" height="100" loading="lazy"
+                                            alt="Mommessin - Châteauneuf-du-Pape" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Mommessin -
+                                                    Châteauneuf-du-Pape</a></h3>
+                                            <span class="span title-2">$57.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A classic Châteauneuf-du-Pape with deep red fruit,
+                                            herbal notes, and a long, velvety finish.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Cave Spring.webp" width="100" height="100"
+                                            loading="lazy" alt="Cave Spring - Cabernet Franc" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Cave Spring - Cabernet
+                                                    Franc</a></h3>
+                                            <span class="span title-2">$35.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A well-structured Cabernet Franc with flavors of
+                                            red berries, green pepper, and earthy undertones, reflecting Ontario’s
+                                            terroir.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Catena Zapata.webp" width="100" height="100"
+                                            loading="lazy" alt="Catena Zapata - Malbec" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Catena Zapata -
+                                                    Malbec</a></h3>
+                                            <span class="span title-2">$44.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A signature Malbec with intense blackberry, plum,
+                                            and chocolate notes, offering a bold yet smooth profile.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="White Wines">
+                        <h2 class="headline-2 section-title text-center fix-underline">White Wines</h2>
+                        <ul class="grid-list">
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Inniskillin.jpg.webp" width="100" height="100"
+                                            loading="lazy" alt="Inniskillin - Riesling Pinot Grigio " class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Inniskillin - Riesling
+                                                    Pinot Grigio </a></h3>
+                                            <span class="span title-2">$29.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A crisp and refreshing blend of Riesling and Pinot
+                                            Grigio, offering bright citrus and green apple notes with a clean finish.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Banfi.jpg.webp" width="100" height="100" loading="lazy"
+                                            alt="Banfi Principessa - Gavi" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Banfi Principessa -
+                                                    Gavi</a></h3>
+                                            <span class="span title-2">$39.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A dry and elegant Italian white wine with floral
+                                            aromas, hints of pear, and a touch of almond on the finish.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Wolf Blass.jpg.webp" width="100" height="100"
+                                            loading="lazy" alt="Wolf Blass - Chardonnay" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Wolf Blass -
+                                                    Chardonnay</a></h3>
+                                            <span class="span title-2">$32.95 </span>
+                                        </div>
+                                        <p class="card-text label-1">A rich, full-bodied Chardonnay with ripe tropical
+                                            fruit flavors, balanced oak, and a smooth buttery texture.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Konzelmann.webp" width="100" height="100" loading="lazy"
+                                            alt="Konzelmann - Pinot Blanc" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Konzelmann - Pinot
+                                                    Blanc</a></h3>
+                                            <span class="span title-2">$32.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A delicate and well-balanced wine with subtle
+                                            floral aromas, soft citrus flavors, and a light mineral finish.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Cave Spring.jpg.webp" width="100" height="100"
+                                            loading="lazy" alt="Cave Spring - Riesling" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Cave Spring -
+                                                    Riesling</a></h3>
+                                            <span class="span title-2">$27.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A lively and aromatic Riesling featuring zesty
+                                            lime, white peach, and a hint of minerality.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-card hover:card">
+                                    <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                                        <img src="./assets/menu/Bouchard.jpg.webp" width="100" height="100"
+                                            loading="lazy" alt="Bouchard Père & Fils - Chablis" class="img-bar">
+                                    </figure>
+                                    <div class="title-span">
+                                        <div class="title-wrapper">
+                                            <h3 class="title-3"><a class="card-title">Bouchard Père & Fils -
+                                                    Chablis</a></h3>
+                                            <span class="span title-2">$46.95</span>
+                                        </div>
+                                        <p class="card-text label-1">A classic Chablis with bright acidity, green apple,
+                                            citrus, and a flinty minerality that defines the Burgundy region.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+        <img src="./assets/images/shape-6.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-4 move-anim">
+        <!-- <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape" class="shape shape-3 move-anim"> -->
+        <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-5 move-anim">
+    </div>
+    <!-- Footer.html -->
+    <div class="topbar" data-footer>
+        <div class="container">
+
+            <div class="topbar-item">
+                <div class="topbar-img">
+                    <img src="./assets/images/vegan.png" alt="vegan">
+                </div>
+
+                <span class="span">
+                    Vegan
+                </span>
+            </div>
+
+            <div class="topbar-item item-2">
+                <div class="topbar-img">
+                    <img src="./assets/images/chef-3.png" alt="chef">
+                </div>
+
+                <span class="span">Chef Special</span>
+            </div>
+
+            <div class="topbar-item item-2">
+                <div class="topbar-img">
+                    <img src="./assets/images/cashew-4.png" alt="cashew">
+                </div>
+
+                <span class="span">Contain Cashew</span>
+            </div>
+
+            <div class="topbar-item item-2">
+                <div class="topbar-img">
+                    <img src="./assets/images/chilli.png" alt="chilli">
+                </div>
+
+                <span class="span">Spicy</span>
+            </div>
+
+            <a href="tel:+12496880823" class="topbar-item link footer-info">
+                <div class="icon">
+                    <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                </div>
+                <span class="span">+1 249 (688)-0823</span>
+            </a>
+            <a href="mailto:flavourfusion@gmail.com" class="topbar-item link footer-info">
+                <div class="icon">
+                    <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                </div>
+                <span class="span">flavourfusion@gmail.com</span>
+            </a>
+        </div>
+    </div>
+    <!-- Back To Top -->
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+        <img src="./assets/images/up arrow.png" alt="up arrow">
+      </a>
+
+    <script>
+        function openTab(evt, tabName) {
+            var tabContents = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active");
+            }
+            var tabLinks = document.getElementsByClassName("navbar-link");
+            for (var i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+
+            const activeLink = document.querySelector(`.navbar-link[href="#${tabName}"]`);
+            if (activeLink) {
+                activeLink.classList.add('active');
+            }
+            // Toggle BAR tab visibility
+            const barItem = document.querySelector('.navbar-item[data-bar]');
+            if (window.innerWidth > 1200) {
+                if (tabName != 'home') {
+                    barItem.style.display = 'list-item';
+                } else {
+                    barItem.style.display = 'none';
+                }
+            }
+        }
+    </script>
+
+    <script src="./assets/js/food-menu.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
