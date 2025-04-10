@@ -8,6 +8,8 @@
   <title>Flavour Fusion</title>
   <meta name="title" content="Flavour Fusion">
   <meta name="description" content="Flavour Fusion - Amazing & Delicious Food">
+  <!-- <iframe width="0" height="g" src="https://www.youtube.com/watch?v=53nwh1aHCU8" framehorder="g"
+allowfullsgreen></iframe> -->
 
   <!-- Icon -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
@@ -35,12 +37,80 @@
 </head>
 
 <body id="top">
-
+  
+  
+  <!-- <iframe id="bgMusic" width="0" height="0" src="https://www.youtube.com/embed/vTlwOT_VlbY?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe> -->
+  
   <!-- Preloader -->
   <div class="preload" data-preaload>
     <div class="circle"></div>
     <p class="text">Flavour Fusion</p>
   </div>
+
+  <!-- <audio id="background-music" src="./assets/background-music.mp3" loop></audio>
+  <button class="music-btn" onclick="startMusic()">♪</button>
+  
+  <script>
+    const audio = document.getElementById("background-music");
+    const musicBtn = document.querySelector('.music-btn');
+    audio.volume = 0.5;
+    
+    function startMusic() {
+      if (audio.paused) {
+        audio.play()
+          .then(() => {
+            console.log("Music started successfully");
+            musicBtn.classList.add('playing');
+            musicBtn.textContent = '♫'; // Change icon when playing
+          })
+          .catch(error => {
+            console.log("Error starting music:", error);
+            musicBtn.textContent = '!'; // Show error icon
+          });
+      } else {
+        audio.pause();
+        musicBtn.classList.remove('playing');
+        musicBtn.textContent = '♪'; // Revert to original icon
+      }
+    }
+  </script> -->
+
+  <!-- Play Music -->
+
+  <audio id="background-music" src="./assets/background-music.mp3" loop></audio>
+<button class="music-btn" onclick="toggleMusic()">
+  <img src="./assets/images/music-play.png" alt="Play Music" class="music-icon">
+</button>
+
+<script>
+const audio = document.getElementById("background-music");
+const musicBtn = document.querySelector('.music-btn');
+const musicIcon = document.querySelector('.music-icon');
+audio.volume = 0.5;
+
+// Preload images
+const playIcon = './assets/images/music-play.png';
+const pauseIcon = './assets/images/music-stop.png';
+
+function toggleMusic() {
+  if (audio.paused) {
+    audio.play()
+      .then(() => {
+        musicBtn.classList.add('playing');
+        musicIcon.src = pauseIcon;
+        musicIcon.alt = "Pause Music";
+      })
+      .catch(error => {
+        console.error("Error starting music:", error);
+      });
+  } else {
+    audio.pause();
+    musicBtn.classList.remove('playing');
+    musicIcon.src = playIcon;
+    musicIcon.alt = "Play Music";
+  }
+}
+</script>
 
   <!-- Topbar.html -->
   <div class="topbar">

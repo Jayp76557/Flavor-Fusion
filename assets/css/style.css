@@ -356,3 +356,34 @@ body.nav-active { overflow: hidden; }
 }
 
 
+.music-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: var(--gold-crayola);
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-circle);
+  display: grid;
+  place-items: center;
+  border: none;
+  cursor: pointer;
+  z-index: 4;
+  transition: var(--transition-1);
+}
+
+.music-btn:hover {
+  background-color: var(--white);
+  transform: scale(1.1);
+}
+
+.music-btn.playing {
+  background-color: rgba(40, 167, 69, 0.7);
+  box-shadow: 0 0 15px rgba(40, 167, 69, 0.7);
+}
+
+.music-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
